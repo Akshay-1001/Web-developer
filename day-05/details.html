@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+<style>
+    #Personal, 
+    #Educational,
+    #other {
+        /*
+        border: 1px solid #000;
+        width: 50%;
+        padding: 2%;
+        margin: 1%;
+        height: 400px;
+        */
+        margin: 1%;
+    }
+
+    form {
+        border: 2px solid #2b2c2c;
+        height: auto;
+        margin: auto;
+        width: 30%;
+        padding: 1%;
+    }
+
+
+
+
+</style>
+<body>
+    <form>
+        <fieldset id="Personal">
+            <legend>Personal Details</legend>
+            <label for="First Name"> First Name : </label>
+                <input type="text" name="First Name" placeholder="Enter your first name"><br>
+            <label for="Last Name">Last Name : </label>
+                <input type="text" name="Last Name" placeholder="Enter your last name"><br>
+            <label for="Father name">Father's name :</label>
+                <input type="text" name="Father name" placeholder="Enter your father's name"><br>
+            <label for="Mother name">Mother's name :</label>
+                <input type="text" name="Mother name" placeholder="Enter your mother's name"><br>
+            <label for="age">Age : </label>
+                <input type="number" name="Age" placeholder="Enter your age" min="10" max="45"><br>
+
+        </fieldset>
+
+        <fieldset id="Educational">
+
+            <legend>Educational Details</legend>
+            <label for="College">College Name : </label>
+                <input type="text" name="College" placeholder="Enter your college name"><br>
+            <label for="board">University Board : </label>
+                <input type="text" name="board" placeholder="Enter your University board"><br>
+            <label for="CGPD">CGPD : </label>
+                <input type="number" name="CGPD" placeholder="CGPD" min="4.0" max="10">
+
+        </fieldset>
+
+        <fieldset id="other">
+
+            <legend>Other Details</legend>
+            <label for=""></label>
+
+        </fieldset>
+        
+    </form>
+</body>
+</html>

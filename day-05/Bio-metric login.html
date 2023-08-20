@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/boiclone.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/captcha/turnstile/hunter.js"></script><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/captcha/amazon_waf/interceptor.js"></script><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/captcha/yandex/interceptor.js"></script><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/captcha/lemin/interceptor.js"></script><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/captcha/arkoselabs/hunter.js"></script><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/captcha/arkoselabs/interceptor.js"></script><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/captcha/recaptcha/hunter.js"></script><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/captcha/recaptcha/interceptor.js"></script><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/captcha/keycaptcha/hunter.js"></script><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/captcha/hcaptcha/hunter.js"></script><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/captcha/hcaptcha/interceptor.js"></script><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/captcha/geetest_v4/interceptor.js"></script><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/captcha/geetest/interceptor.js"></script><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/communication_helpers.js"></script><script src="chrome-extension://ifibfemgeogfhoebkmokieepdoobkbpo/content/core_helpers.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-metric login</title>
+<style>
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .Indian-gov {
+        height: 100px;
+        float: left;
+    }
+
+
+    /* .lang {
+        float: right;
+    }
+
+    .tab {
+        background-color: #410909;
+        color: #e7e5e5;
+        margin: none;
+    }
+
+    .header {
+        background-color: #ccaa6b;
+    }
+
+    .enter-pin {
+        width: 40%;
+        background-color: #dcc59c;
+        border: 3px solid #eb5555;
+        border-radius: 10px; 
+    }
+
+    .bio-pic {
+        background-color: #fef6e7;
+        height: 70%;
+        width: 100%;
+    }
+    
+    button {
+        background-color: #478864;
+        border: none;
+        color: #fff;    
+        height: 70px;
+        width: 70px;
+        font: 20px bold;
+        margin: 0.5%;
+        border-radius: 5%;
+    }
+
+    .footer {
+        height: 100px;
+    }
+
+    .digit-input {
+        border: none;
+        background-color: #dcc59c;
+    } */
+
+</style><captcha-widgets></captcha-widgets></head>
+
+<body>
+    <div id="container">
+        <div class="tab">
+            <h4>AEBAS</h4>
+        </div>
+        <div class="header">
+            <div class="title">
+                <img src="./Bio-metric login_files/Emblem_of_India.svg.png" alt="symbol" class="Indian-gov">
+                <h1>Biometric Attendance System</h1>
+                <h3>[Govt. of India]</h3>
+            </div>
+            <div class="lang">
+                <form>
+                    <label for="language">Change Language</label>
+                    <select id="dropdown" name="language">
+                        <option disabled="" selected="" value=""> select language </option>
+                        <option value="English">English</option>
+                        <option value="Kannada">Kannada</option>
+                        <option value="Hindi">Hindi</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="bio-pic">
+            <div class="menu">
+                <div class="burger"> 
+                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                    <h3>Menu</h3>
+                </div>
+                <div class="domain">
+                    <h3>domain : <a href="https://central.skillattendance.ac.in/">https://central.skillattendance.ac.in</a></h3>
+                </div>
+                <div class="state">
+                    <h3>state : <a href="https://central.skillattendance.ac.in/">Central Skill Development</a></h3>
+                </div>
+            </div>
+            <div class="enter-pin">
+                <img src="./Bio-metric login_files/T-pic.jpg" alt="T-pic" class="t-pic">
+                <label for="8digit">Enter 8 digit Attendance ID : </label>
+                <input type="number" name="8digit" class="digit-input" required="">
+            </div>
+            <div class="number-pad">
+                <div class="row 1">
+                    <button name="num1" class="num1">1</button>
+                    <button name="num2" class="num2">2</button>
+                    <button name="num3" class="num3">3</button>
+                </div>
+                    
+                <div class="row 2">
+                    <button name="num4" class="num4">4</button>
+                    <button name="num5" class="num5">5</button>
+                    <button name="num6" class="num6">6</button>
+                </div>
+                <div class="row 3">
+                    <button name="num7" class="num7">7</button>
+                    <button name="num8" class="num8">8</button>
+                    <button name="num9" class="num9">9</button>
+                </div>
+                <div class="row 4">
+                    <button name="num0" class="num0">0</button>
+                    <button name="BKSP" class="BKSP">BKSP</button>
+                    <button name="Reset" class="Reset">Reset</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="symbol">
+                <svg fill="#eb5555" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 395.71 395.71" xml:space="preserve">
+                <g>
+	                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+		c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+		C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+		c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"></path>
+                </g>
+            </svg>
+                <h2>MANTRA Device Connected</h2>
+                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z" fill="#1C274C"></path>
+                    </svg>
+                <svg fill="#000000" height="30px" width="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 388.046 388.046" xml:space="preserve">
+               <g>
+                   <g>
+                       <path d="M341.698,217.842c10.595-6.117,17.741-17.567,17.741-30.656c0-9.442-3.676-18.325-10.354-25.016
+                           c-6.683-6.683-15.567-10.364-25.016-10.364h-92.631c-8.444,0-16.036-4.357-20.308-11.656c-4.229-7.226-4.317-15.88-0.235-23.149
+                           c14.795-26.328,21.001-56.215,19.484-72.131c-2.6-27.286-20.705-45.718-44.021-44.84L185.7,0.051
+                           C170,0.65,157.477,13.002,156.569,28.779c-1.982,34.052-29.568,68.786-55.267,98.666c-8.099,9.405-14.864,19.831-20.104,30.981
+                           c-1.477,3.134-3.801,5.769-6.731,7.627c-2.911,1.853-6.279,2.833-9.739,2.833h-29.62c-3.59,0-6.5,2.91-6.5,6.5v192.57
+                           c0,3.59,2.91,6.5,6.5,6.5c18.248,0,36.381,2.595,53.896,7.714c13.34,3.899,27.151,5.876,41.05,5.876H293.66
+                           c8.417,0,16.328-3.276,22.281-9.229c6.076-6.089,9.349-14.177,9.215-22.772c-0.117-7.491-2.944-14.37-7.55-19.734
+                           c14.165-4.619,24.429-17.954,24.429-33.64c0-9.652-3.886-18.414-10.176-24.803c13.15-5.163,22.484-17.983,22.484-32.942
+                           C354.343,234.067,349.424,224.336,341.698,217.842z M318.97,267.299h-12.307c-3.59,0-6.5,2.91-6.5,6.5c0,3.59,2.91,6.5,6.5,6.5
+                           c12.336,0,22.372,10.036,22.372,22.373s-10.036,22.372-22.374,22.372l-13.565,0.003c-3.589,0.001-6.499,2.911-6.499,6.501
+                           c0,3.59,2.911,6.499,6.5,6.499c10.353,0,18.903,8.165,19.06,18.201c0.078,5.052-1.846,9.806-5.414,13.382
+                           c-3.493,3.493-8.139,5.416-13.084,5.416H130.052c-12.664,0-25.248-1.801-37.403-5.354c-16.618-4.857-33.758-7.586-51.042-8.134
+                           V181.887h23.12c5.938,0,11.719-1.683,16.71-4.86c5.007-3.174,8.99-7.69,11.522-13.065c4.742-10.089,10.862-19.521,18.195-28.036
+                           c27.088-31.496,56.173-68.289,58.391-106.395c0.521-9.058,7.679-16.146,16.611-16.487l0.656-0.021
+                           c13.62-0.518,28.378,9.511,30.623,33.081c1.031,10.816-2.911,37.899-17.877,64.531c-6.368,11.34-6.237,24.83,0.35,36.083
+                           c6.63,11.327,18.416,18.089,31.527,18.089h92.631c5.976,0,11.596,2.328,15.819,6.552c4.225,4.232,6.551,9.853,6.551,15.828
+                           c0,12.334-10.035,22.369-22.369,22.37l-5.069-0.002c-0.005,0-0.01,0-0.014,0h-0.013c-0.001,0-0.002,0-0.003,0
+                           c-3.589,0-6.499,2.909-6.5,6.499c-0.001,3.589,2.908,6.5,6.497,6.501h0.008c12.334,0.002,22.368,10.038,22.368,22.372
+                           C341.343,257.263,331.307,267.299,318.97,267.299z"></path>
+                   </g>
+               </g>
+            </svg>
+               <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.70711 19.7071L19.7071 5.70711C20.0976 5.31658 20.0976 4.68342 19.7071 4.29289C19.3166 3.90237 18.6834 3.90237 18.2929 4.29289L4.29289 18.2929C3.90237 18.6834 3.90237 19.3166 4.29289 19.7071C4.68342 20.0976 5.31658 20.0976 5.70711 19.7071Z" fill="#000000"></path>
+                <path d="M12 5C13.2011 5 14.394 5.21361 15.5362 5.63535L13.9368 7.23482C13.2953 7.0777 12.6458 7 12 7C9.07319 7 6.06862 8.59614 4.09173 11.9487C4.74631 13.0987 5.52178 14.046 6.37447 14.7971L4.95845 16.2131C3.88666 15.248 2.93477 14.037 2.16029 12.5876C1.94361 12.1821 1.94637 11.6844 2.17003 11.2807C4.45796 7.15186 8.18777 5 12 5Z" fill="#000000"></path>
+                <path d="M12 9C12.056 9 12.1117 9.00154 12.167 9.00457L9.00457 12.167C9.00154 12.1117 9 12.056 9 12C9 10.3431 10.3431 9 12 9Z" fill="#000000"></path>
+                <path d="M14.9954 11.833L11.833 14.9954C11.8883 14.9985 11.944 15 12 15C13.6569 15 15 13.6569 15 12C15 11.944 14.9985 11.8883 14.9954 11.833Z" fill="#000000"></path>
+                <path d="M12 17C11.355 17 10.7061 16.9216 10.0654 16.763L8.46807 18.3604C9.60812 18.7849 10.7998 19 12 19C15.8372 19 19.5882 16.8013 21.8397 12.5876C22.0564 12.1821 22.0536 11.6844 21.83 11.2807C21.0543 9.88089 20.1128 8.7083 19.0587 7.76977L17.6421 9.18635C18.4837 9.91776 19.2525 10.8366 19.9083 11.9487C17.9595 15.3724 14.939 17 12 17Z" fill="#000000"></path>
+                </svg>
+            <svg fill="#000000" width="30px" height="30px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>ionicons-v5-i</title><path d="M390.42,75.28a10.45,10.45,0,0,1-5.32-1.44C340.72,50.08,302.35,40,256.35,40c-45.77,0-89.23,11.28-128.76,33.84C122,77,115.11,74.8,111.87,69a12.4,12.4,0,0,1,4.63-16.32A281.81,281.81,0,0,1,256.35,16c49.23,0,92.23,11.28,139.39,36.48a12,12,0,0,1,4.85,16.08A11.3,11.3,0,0,1,390.42,75.28Zm-330.79,126a11.73,11.73,0,0,1-6.7-2.16,12.26,12.26,0,0,1-2.78-16.8c22.89-33.6,52-60,86.69-78.48C209.42,65,302.35,64.72,375.16,103.6c34.68,18.48,63.8,44.64,86.69,78a12.29,12.29,0,0,1-2.78,16.8,11.26,11.26,0,0,1-16.18-2.88c-20.8-30.24-47.15-54-78.36-70.56-66.34-35.28-151.18-35.28-217.29.24-31.44,16.8-57.79,40.8-78.59,71A10,10,0,0,1,59.63,201.28ZM204.1,491a10.66,10.66,0,0,1-8.09-3.6C175.9,466.48,165,453,149.55,424c-16-29.52-24.27-65.52-24.27-104.16,0-71.28,58.71-129.36,130.84-129.36S387,248.56,387,319.84a11.56,11.56,0,1,1-23.11,0c0-58.08-48.32-105.36-107.72-105.36S148.4,261.76,148.4,319.84c0,34.56,7.39,66.48,21.49,92.4,14.8,27.6,25,39.36,42.77,58.08a12.67,12.67,0,0,1,0,17A12.44,12.44,0,0,1,204.1,491Zm165.75-44.4c-27.51,0-51.78-7.2-71.66-21.36a129.1,129.1,0,0,1-55-105.36,11.57,11.57,0,1,1,23.12,0,104.28,104.28,0,0,0,44.84,85.44c16.41,11.52,35.6,17,58.72,17a147.41,147.41,0,0,0,24-2.4c6.24-1.2,12.25,3.12,13.4,9.84a11.92,11.92,0,0,1-9.47,13.92A152.28,152.28,0,0,1,369.85,446.56ZM323.38,496a13,13,0,0,1-3-.48c-36.76-10.56-60.8-24.72-86-50.4-32.37-33.36-50.16-77.76-50.16-125.28,0-38.88,31.9-70.56,71.19-70.56s71.2,31.68,71.2,70.56c0,25.68,21.5,46.56,48.08,46.56s48.08-20.88,48.08-46.56c0-90.48-75.13-163.92-167.59-163.92-65.65,0-125.75,37.92-152.79,96.72-9,19.44-13.64,42.24-13.64,67.2,0,18.72,1.61,48.24,15.48,86.64,2.32,6.24-.69,13.2-6.7,15.36a11.34,11.34,0,0,1-14.79-7,276.39,276.39,0,0,1-16.88-95c0-28.8,5.32-55,15.72-77.76,30.75-67,98.94-110.4,173.6-110.4,105.18,0,190.71,84.24,190.71,187.92,0,38.88-31.9,70.56-71.2,70.56s-71.2-31.68-71.2-70.56C303.5,293.92,282,273,255.42,273s-48.08,20.88-48.08,46.56c0,41,15.26,79.44,43.23,108.24,22,22.56,43,35,75.59,44.4,6.24,1.68,9.71,8.4,8.09,14.64A11.39,11.39,0,0,1,323.38,496Z"></path></svg>
+            <svg width="30px" height="30px" viewBox="0 -1.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+                <title>radio_tower [#1019]</title>
+                <desc>Created with Sketch.</desc>
+                <defs>
+            
+            </defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Dribbble-Light-Preview" transform="translate(-420.000000, -3641.000000)" fill="#000000">
+                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <path d="M378.195439,3483.828 L376.781439,3485.242 C378.195439,3486.656 378.294439,3489.588 376.880439,3491.002 L378.294439,3492.417 C380.415439,3490.295 380.316439,3485.949 378.195439,3483.828 M381.023439,3481 L379.609439,3482.414 C382.438439,3485.242 382.537439,3491.002 379.708439,3493.831 L381.122439,3495.245 C385.365439,3491.002 384.559439,3484.535 381.023439,3481 M375.432439,3486.737 C375.409439,3486.711 375.392439,3486.682 375.367439,3486.656 L375.363439,3486.66 C374.582439,3485.879 373.243439,3485.952 372.536439,3486.659 C371.829439,3487.366 371.831439,3488.778 372.538439,3489.485 C372.547439,3489.494 372.558439,3489.499 372.567439,3489.508 C372.590439,3489.534 372.607439,3489.563 372.632439,3489.588 L372.636439,3489.585 C373.201439,3490.15 373.000439,3488.284 373.000439,3498 L375.000439,3498 C375.000439,3488.058 374.753439,3490.296 375.463439,3489.586 C376.170439,3488.879 376.168439,3487.467 375.461439,3486.76 C375.452439,3486.751 375.441439,3486.746 375.432439,3486.737 M371.119439,3485.242 L369.705439,3483.828 C367.584439,3485.949 367.683439,3490.295 369.804439,3492.417 L371.218439,3491.002 C369.804439,3489.588 369.705439,3486.656 371.119439,3485.242 M368.390439,3493.831 L366.976439,3495.245 C363.440439,3491.709 362.634439,3485.242 366.877439,3481 L368.291439,3482.414 C365.462439,3485.242 365.561439,3491.002 368.390439,3493.831" id="radio_tower-[#1019]">
+            
+            </path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <svg fill="#000000" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+<path d="M256,0C114.613,0,0,114.617,0,256c0,141.391,114.613,256,256,256s256-114.609,256-256C512,114.617,397.387,0,256,0z
+	 M256,128c17.674,0,32,14.328,32,32c0,17.68-14.326,32-32,32s-32-14.32-32-32C224,142.328,238.326,128,256,128z M304,384h-96
+	c-8.836,0-16-7.156-16-16c0-8.836,7.164-16,16-16h16v-96h-16c-8.836,0-16-7.156-16-16c0-8.836,7.164-16,16-16h64
+	c8.836,0,16,7.164,16,16v112h16c8.836,0,16,7.164,16,16C320,376.844,312.836,384,304,384z"></path>
+            </svg>
+            </div>
+            <div class="last-f">
+                <div class="time">
+                    <h3>Connected to server, checked at : </h3>
+                    <h3>09:18:48 AM</h3>
+                </div>
+                <div>
+                    <h4>Helpline</h4>
+                    <h4>Server Status</h4>
+                    <h4>Device Status</h4>
+                    <h4>Network status</h4>
+                    <h4>Device info</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<scribe-shadow id="crxjs-ext" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible;"><template shadowrootmode="open"><div id="root-scribe-elem" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; overflow: visible; color: rgb(15, 23, 42);"></div><link rel="stylesheet" href="chrome-extension://okfkdaglfjjjfefdcppliegebpoegaii/assets/style.css"></template></scribe-shadow></body></html>
