@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random shapes</title>
+    <style>
+        .container {
+            height: 500px;
+            width: 800px;
+            margin: auto;
+            padding: 100px;
+            background-color: #626262;
+        }
+
+        .shape {
+            margin: 130px 20px;
+            float: left;
+        }
+
+        .circle {
+            height: 200px;
+            width: 200px;
+        }
+
+        .rec {
+            height: 50px;
+            width: 300px;
+            background-color: #fff000;
+        }
+
+        .circle {
+            border-radius: 50%;
+            background-color: #2be55d;
+        }
+
+        .square {
+            height: 200px;
+            width: 150px;
+            background-color: #5628eb;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shape square">
+            <video src="./sample_video.mp4" height="200px" width="150px" controls></video>
+        </div>
+
+        <div class="shape circle">
+            <img src="./sample_img.jpg" alt="joji" height="200px">
+        </div>
+
+        <div class="shape rec">
+            <audio controls>
+                <source src="./sample_audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </div>
+</body>
+</html>
