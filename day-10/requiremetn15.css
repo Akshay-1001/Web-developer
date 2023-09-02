@@ -1,0 +1,20 @@
+li {
+    list-style-type: none;
+}
+
+ul{
+    width: 90%;
+    background-color: #12d24d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    height: 100px;
+    width: 80%;
+    background-color: #d1d1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
