@@ -1,0 +1,185 @@
+* {
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+}
+
+.herotext button,
+.two button,
+.sign {
+    background-color: #dc2626;
+}
+
+.five button {
+    color: inherit;
+    margin: 0 3px;
+}
+
+.login {
+    background-color: #c1d1c100;
+    border: 2.3px solid #c8c9ca;
+}
+
+.hero {
+    font-size: 0.8rem;
+    color: #fff;
+    height: 680px;
+    background-image: url(https://s3-media0.fl.yelpcdn.com/educatorphoto/ccPzYQQGD-GXSUadmL3SPw/o.jpg);
+    background-size: 1900px;
+    font-weight: 500;
+}
+
+.activity,
+.categories,
+footer {
+    color: #2d2e2f;
+}
+
+.mynav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    justify-content: space-between;
+}
+
+.two {
+    display: flex;
+    width: 55%;
+    margin-left: 13%;
+}
+
+.mynav input {
+    width: 85%;
+    height: 50px;
+    border-radius: 3px 0 0 3px;
+    padding: 0 0 0 2%;
+}
+
+.mynav input, button {
+    border: none;
+    font: inherit;
+}
+
+.two button {
+    height: 50px;
+    width: 60px;
+    border-radius: 0 3px 3px 0;
+}
+
+.five button{
+    height: 45px;
+    width: 90px;
+}
+
+.five button,
+.herotext button {
+    border-radius: 3px;
+}
+
+.topnav {
+    font-size: 0.9rem;
+}
+
+.topnav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    list-style-type: none;
+}
+
+.herotext {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0 10% 0;
+}
+
+
+.topnav,
+.herotext {
+    width: 25%;
+    margin-left: 20%;
+}
+
+.herotext button {
+    color: inherit;
+    height: 50px;
+    width: 50%;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+.activity,
+.categories {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2% 0;
+}
+
+.catgrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+}
+
+.categories h2 {
+    margin: 1.5% 0;
+}
+
+.box {
+    width: 20%;
+    height: 180px;
+    border: 1px solid #e3e3e3;
+    border-radius: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5%;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+footer {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 2% 15%;
+    font-size: 0.9rem;
+}
+
+.col,
+.right,
+.bottom {
+    margin: 2% 5%;
+}
+
+.col li,
+.as li{
+    padding: 3% 0 ;
+    color: #7c7e80;
+}
+
+.col h3,
+.as h3 {
+    color: #363636;
+    padding-bottom: 3%;
+}
+
+.bottom {
+    font-size: 0.7rem;
+}
+
