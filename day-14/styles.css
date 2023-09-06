@@ -1,0 +1,64 @@
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10% 0;
+}
+
+.box-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.content,
+.four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #c194d2;
+}
+
+.box-flex {
+    width: 400px;
+    margin: 0 2%;
+}
+
+.imag {
+    height: 100px;
+    width: 100px;
+    background-color: #c1c1c1;
+}
+
+.content {
+    font-size: x-small;
+    color: #00000000;
+}
+
+.four {
+    font-size: large;
+}
+
+:hover>.content {
+    font-size: large;
+    color: #2d2c2c;
+    transition: 2s;
+}
+
+:hover>.four {
+    font-size: x-small;
+    color: #00000000;
+    transition: 2s;
+}
