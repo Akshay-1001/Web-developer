@@ -1,0 +1,60 @@
+body {
+    background-color: #454545;
+}
+.cal {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    height: 70vh;
+}
+
+form {
+    
+    height: 600px;
+    width: 480px;
+
+    background-color: #080808;
+    border-radius: 10px;
+
+    padding: 20px;
+}
+
+#display {
+    height: 10vh;
+    font-size: 3.5rem;
+    width: 90%;
+
+    background-color: #080808;
+    color: #ededed;
+    border: none;
+
+    margin: 10px;
+}
+
+#display:focus {
+    outline: none ;
+}
+
+.btn {
+    background-color: #454545;
+}
+
+.fun {
+    background-color: #fb990e;
+}
+
+.btn,
+.fun {
+    width: 100px;
+    height: 100px;
+    margin: 1.5%;
+
+    border: none;
+    border-radius: 50%;
+    color: #ededed;
+    font-size: 1.5rem;
+} 
+
+
+
