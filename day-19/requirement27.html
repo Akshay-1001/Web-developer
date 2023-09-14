@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <main class="container">
+        <form name="cal">
+            <label for="Firstn">FN :</label><input type="number" id="fn"> <br>
+            <label for="Op">OP :</label><input type="text" id="op"> <br>
+            <label for="Secon">SN :</label><input type="number" id="sn">
+            <section class="buttons">
+                <button onclick="add()"> add </button>
+                <button onclick="sub()"> sub</button>
+                <button onclick="mul()"> mul </button>
+                <button onclick="div()"> div </button>
+            </section>
+            <label for="out">Output :</label><h1 id="dis"></h1> <br>
+            <button onclick="calculate()">Calculate</button>
+        </form>
+    </main>
+</body>
+<script>
+    function calculate() {
+        fn = document.getElementById('fn').value;
+        op = document.getElementById('op').value;
+        sn = document.getElementById('sn').value;
+
+        if(op=="+") {
+            add()
+        }
+
+        else if(op == "-") {
+            sub()
+        }
+
+        else if(op == "*") {
+            mul()
+        }
+
+        else if(op == "/") {
+            div()
+        }
+    }
+
+    function add() {
+        fn = document.getElementById('fn').value;
+        sn = document.getElementById('sn').value;
+        sum = fn + sn;
+
+        out = document.getElementById('dis');
+        out.innerHTML=sum
+    }
+
+    function sub() {
+        fn = document.getElementById('fn').value;
+        sn = document.getElementById('sn').value;
+        sub = fn - sn;
+
+        out = document.getElementById('dis');
+        out.innerHTML=sub
+    }
+
+    function mul() {
+        fn = document.getElementById('fn').value;
+        sn = document.getElementById('sn').value;
+        mul = fn * sn;
+
+        out = document.getElementById('dis');
+        out.innerHTML=mul
+    }
+
+    function div() {
+        fn = document.getElementById('fn').value;
+        sn = document.getElementById('sn').value;
+        div = fn / sn;
+
+        out = document.getElementById('dis');
+        out.innerHTML=div
+    }
+
+</script>
+</html>
