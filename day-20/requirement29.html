@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./theme.css">
+</head>
+<style>
+    table, th, td {
+        border: 1px solid var(--border-color);
+        border-collapse: collapse;
+    }
+
+    
+
+</style>
+<body id="container">
+    <main>
+        <section id="CT">
+            <button onclick="ctheme()">Change Theme</button>
+            
+        </section>
+        
+        <table id="table">
+            <tr>
+                <th>Day</th>
+                <th>Concepts</th>
+                <th>file Location</th>
+            </tr>
+            <tr>
+                <td rowspan="2">day 01</td>
+                <td rowspan="1">HTML Introduction</td>
+                <td rowspan="2"><a href="/day 01/Akshay V.htm"><button>Open</button></a></td>
+            </tr>
+            <tr>
+                <td>Elements Head body</td>
+            </tr>
+            <tr>
+                
+            </tr>
+        </table>
+    </main>
+</body>
+<script>
+
+    function ctheme() {
+        menu = ("<button onclick='theme()'>Dark theme</button><br><button onclick='lighttheme()'>Light theme</button><br><button onclick='aquatheme()'>Aqua Theme</button><br><button onclick='lazertheme()'>lavender Theme</button>");
+        drop = document.getElementById("CT");
+        drop.innerHTML=menu;
+    }
+
+    function theme() {
+        body = document.getElementById("container");
+        tab = document.getElementById("table");
+        
+        body.style.backgroundColor = "var(--primary-color)";
+        body.style.color = "var(--light)";
+
+        tab.style.backgroundColor = "var(--light-grey)";
+        close();
+    }
+
+    function lighttheme() {
+        body = document.getElementById("container");
+        tab = document.getElementById("table");
+
+        body.style.backgroundColor = "var(--secondary-color)";
+        body.style.color = "var(--light-grey)";
+        tab.style.backgroundColor = "var(--light)";
+        close();
+    }
+
+    function aquatheme() {
+        body = document.getElementById("container");
+        tab = document.getElementById("table");
+
+        body.style.backgroundColor = "var(--aqua-color)";
+        tab.style.backgroundColor = "var(--sec-aqua)";
+        close();
+    }
+
+    function lazertheme() {
+        body = document.getElementById("container");
+        tab = document.getElementById("table");
+
+        body.style.backgroundColor = "var(--lazer-color)";
+        tab.style.backgroundColor = "var(--secondary-color)";
+        close();
+    }
+
+    function close() {
+        menu = (' <button onclick="ctheme()">Change Theme</button>');
+        drop = document.getElementById("CT");
+        drop.innerHTML=menu;
+    }
+</script>
+</html>

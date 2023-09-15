@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    --primary-color : #080808;
+    --border-color : #080808;
+    --light-grey : #1a1a1a;
+    
+    --light : #f2f3f2;
+    --secondary-color : #f3caca;
+
+    --aqua-color : #0d2f24;
+    --sec-aqua: #92eace;
+    
+    --lazer-color : #958afe;
+}
+
+table {
+    width: 700px;
+    height: 10vh;
+    margin: auto;
+
+    background-color: var(--secondary-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
