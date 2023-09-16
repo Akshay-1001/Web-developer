@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <main class="container">
+        <section name="cal">
+            <label for="Firstn">FN :</label><input type="number" id="fn"> <br>
+            <label for="Secon">SN :</label><input type="number" id="sn"><br>
+            <!-- <button onclick="add(), sub(), mul(), div()">Calculate</button><br> -->
+            <button onclick="add()">Calculate</button><br>
+            <!-- <section class="buttons">
+                <button onclick="add()"> add </button>
+                <button onclick="sub()"> sub</button>
+                <button onclick="mul()"> mul </button>
+                <button onclick="div()"> div </button>
+            </section> -->
+            <label for="out">Output :</label><br>
+            <h3 id="add"></h3> 
+            <h3 id="sub"></h3>
+            <h3 id="mul"></h3>
+            <h3 id="divi"></h3>
+        </section>
+    </main>
+</body>
+<script>
+    // function calculate() {
+    //     add();
+    //     sub();
+    //     mul();
+    //     div();
+    // }
+
+    function add() {
+        fn = Number(document.getElementById('fn').value);
+        sn = Number(document.getElementById('sn').value);
+        sum = "addition is " + (fn + sn);
+
+        out = document.getElementById('add');
+        out.innerHTML=sum
+
+        aa = 30;
+        var GlobalVar = 48;
+        let LocalVar = 58;
+        const ConstVar = 10;
+
+        console.log(GlobalVar);
+        console.log(LocalVar);
+        console.log(ConstVar);
+        console.log(aa);
+
+        sub();
+        
+    }
+
+    function sub() {
+        fn = document.getElementById('fn').value;
+        sn = document.getElementById('sn').value;
+        sub = "subtraction is " + (fn - sn);
+
+        out = document.getElementById('sub');
+        out.innerHTML=sub
+
+        mul();
+    }
+
+    function mul() {
+        fn = document.getElementById('fn').value;
+        sn = document.getElementById('sn').value;
+        mul = "multiplication is " + fn * sn;
+
+        out = document.getElementById('mul');
+        out.innerHTML=mul
+
+        div();
+    }
+
+    function div() {
+        fn = document.getElementById('fn').value;
+        sn = document.getElementById('sn').value;
+        div = "division is " + fn / sn;
+
+        out = document.getElementById('divi');
+        out.innerHTML=div
+    }
+
+</script>
+</html>
