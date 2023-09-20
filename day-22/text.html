@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <button onmouseover="fun1()">click here</button>
+    <h1 id="btn">Dont hover on button above</h1>
+    <input id="par" onmouseover="condition()"></input>
+    <p id="msg"></p>
+</body>
+<script>
+    // let a = 1;
+    // if (a === '1') {
+    //     document.write("value match");
+    // }
+    // else {
+    //     document.write("value doesnt match");
+    // }
+
+    function fun1() {
+        a = "this is done using onmouseover";
+        b = document.getElementById("btn");
+        b.innerHTML = a;
+    }
+
+    function condition() {
+        fN = document.getElementById("par").value;
+        Ms = document.getElementById("msg");
+        if(fN) {
+            msg.innerHTML = ("the name you entered :" + fN);
+        }
+        else {
+            "print enter your name";
+        }
+    }
+</script>
+</html>
